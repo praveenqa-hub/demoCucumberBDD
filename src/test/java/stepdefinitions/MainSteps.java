@@ -10,13 +10,13 @@ public class MainSteps {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("user is on - Landing page");
 	}
-	@When("User login into the application")
-	public void user_login_into_the_application() {
+	@When("User login with username {string} and password {string} into the application")
+	public void user_login_into_the_application(String username, String password) {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("user Logged In");
+		System.out.println("user Logged In with username : "+username+" password : "+password);
 	}
 	@Then("Home Page is displayed")
-	public void home_page_is_displayed() {
+	public void home_page_is_displayed() { 
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("user is on - HomePage");
 	}
