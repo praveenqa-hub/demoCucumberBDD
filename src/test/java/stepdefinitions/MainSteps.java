@@ -15,6 +15,12 @@ public class MainSteps {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("user Logged In with username : "+username+" password : "+password);
 	}
+	
+	@When("User login with username {string} and password {string} into the application combination")
+	public void user_login_application(String username, String password) {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("user Logged In with username : "+username+" password : "+password);
+	}
 	@Then("Home Page is displayed")
 	public void home_page_is_displayed() { 
 	    // Write code here that turns the phrase above into concrete actions
