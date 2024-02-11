@@ -45,4 +45,17 @@ public class MainSteps {
 	public void user_home_page() {
 		System.out.println("bgHome Page is populated");
 	}
+	
+	@Given ("setup entries in the database")
+	public void dbSetup() {
+		System.out.println("db entries setup");
+	}
+	@When ("launched browser with config")
+	public void launchBrow(){
+		System.out.println("launched browser with config");
+	}
+	@When ("hit the homepage url of bank website")
+	public void navhomePage() {
+		System.out.println("home page of bank");
+	}
 }

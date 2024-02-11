@@ -1,5 +1,10 @@
 Feature: Application Login
 
+Background:
+Given setup entries in the database
+When launched browser with config
+And hit the homepage url of bank website
+
   Scenario: Admin Page Default Login
     Given User is on NetBanking Landing Page
     When User login with username "demoAdmin" and password "demo123" into the application
