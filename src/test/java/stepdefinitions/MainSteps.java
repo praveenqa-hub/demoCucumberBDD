@@ -25,4 +25,9 @@ public class MainSteps {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("user can view cards");
 	}
+	
+	@Then ("Home Page is populated")
+	public void user_home_page() {
+		System.out.println("bgHome Page is populated");
+	}
 }

@@ -6,4 +6,10 @@ Feature: Application Login
     Then Home Page is displayed
     And Cards are displayed
 
+#Reusable
 
+ Scenario: User Page Default Login
+    Given User is on NetBanking Landing Page
+    When User login into the application
+    Then Home Page is populated
+    And Cards are displayed
