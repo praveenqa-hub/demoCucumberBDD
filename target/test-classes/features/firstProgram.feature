@@ -16,11 +16,22 @@ Feature: Application Login
 
  Scenario Outline: User Page Default Login
     Given User is on NetBanking Landing Page
-   	When User login with username "<Username>" and password "<Password>" into the application combination
+   	When User login with username "<Username>" and password "<Password>" into the application
     Then Home Page is populated
     And Cards are displayed
     
   Examples:
   | Username	| 	Password 	|
-  | demouser 	| 	demo@4123  	|
+  | demouser 	| 	demo@4123 |
   | demo1user | 	demo@123  |
+  
+   Scenario Outline: User Page Login
+    Given User is on NetBanking Landing Page
+   	When User login with username <Username> and password <Password> into the application combination
+    Then Home Page is populated
+    And Cards are displayed
+    
+     Examples:
+  | Username	| 	Password 	|
+  | 124 			| 	1.2			  |
+  | dhoni | 	12433332  |
