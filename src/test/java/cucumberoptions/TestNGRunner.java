@@ -6,9 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 //@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "@SmokeTest")
 //@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "@RegressionTest")
 //@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "@SmokeTest and @RegressionTest")
-@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "@SmokeTest or @RegressionTest")
 //@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "not @SmokeTest")
 //@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "not @RegressionTest")
+//@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "@SmokeTest or @RegressionTest", plugin = {"pretty","html:target/cucumber.html"})
+@CucumberOptions(features = "src/test/java/features", glue = "stepdefinitions", monochrome = true, tags= "@SmokeTest or @RegressionTest", dryRun = true)
 public class TestNGRunner extends AbstractTestNGCucumberTests{
 	
 }
