@@ -35,3 +35,14 @@ Feature: Application Login
   | Username	| 	Password 	|
   | 124				| 	1.2			  |
   | dhoni			| 	12433332  |
+  
+  Scenario: User Page Default Login
+    Given User is on NetBanking Landing Page
+   	When User login 
+   	| rahul|
+   	|shetty|
+   	|demo|
+   	|123|
+   	
+    Then Home Page is populated
+    And Cards are displayed
