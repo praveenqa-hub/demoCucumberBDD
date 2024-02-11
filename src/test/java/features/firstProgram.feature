@@ -8,12 +8,14 @@ Feature: Application Login
 
 #Reusable
 
+@SmokeTest
  Scenario: User Page Default Login
     Given User is on NetBanking Landing Page
    	When User login with username "demouser" and password "user@123" into the application
     Then Home Page is populated
     And Cards are displayed
 
+ @RegressionTest
  Scenario Outline: User Page Default Login
     Given User is on NetBanking Landing Page
    	When User login with username "<Username>" and password "<Password>" into the application
@@ -25,7 +27,8 @@ Feature: Application Login
   | demouser 	| 	demo@4123 |
   | demo1user | 	demo@123  |
   
-   Scenario Outline: User Page Login
+ 	@SmokeTest @RegressionTest
+  Scenario Outline: User Page Login
     Given User is on NetBanking Landing Page
    	When User login with username <Username> and password <Password> into the application combination
     Then Home Page is populated
