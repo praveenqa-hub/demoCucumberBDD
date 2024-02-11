@@ -31,7 +31,7 @@ Feature: Application Login
     Then Home Page is populated
     And Cards are displayed
     
-     Examples:
+  Examples:
   | Username	| 	Password 	|
-  | 124 			| 	1.2			  |
-  | dhoni | 	12433332  |
+  | 124				| 	1.2			  |
+  | dhoni			| 	12433332  |
