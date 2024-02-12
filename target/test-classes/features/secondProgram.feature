@@ -22,7 +22,7 @@ Feature: Application Login
  	@SmokeTest @RegressionTest
   Scenario Outline: User Page Login
     Given User is on NetBanking Landing Page
-   	When User login with username <Username> and password <Password> into the application combination
+   	When User login with username Username and password Password into the application combination
     Then Home Page is populated
     And Cards are displayed
     
